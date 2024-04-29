@@ -75,7 +75,6 @@ public class HW11 {
         List<WebElement> coachesNames = browser.findElements(By.className("coach-card_name"));
         coachesNames.stream().map(WebElement::getText).forEach(System.out::println);
 
-        // Закриття браузера
         browser.quit();
     }
 }
