@@ -4,15 +4,20 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class OpportunitiesBlock {
-    @FindBy(className = "opportunity-item_title")
+
+    // Змінила @FindBy(className) на @FindBy(css) для більшої гнучкості
+    @FindBy(css = ".opportunity-item_title")
     private WebElement title;
-    @FindBy(className = "p-s opportunity-item_descr")
+
+    @FindBy(css = ".opportunity-item_descr")
     private WebElement description;
 
+    // Методи з перевіркою на наявність елементів (перед спробою отримати їх текст або атрибути), щоб не виникло помилки
     public String getOpportunityName() {
-        return title.getText();
+        return title != null && title.isDisplayed() ? title.getText() : "";
     }
+
     public String getOpportunityDescription() {
-        return description.getText();
+        return description != null && description.isDisplayed() ? description.getText() : "";
     }
 }

@@ -4,25 +4,34 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class TestingCoursesBlock {
-    @FindBy(className = "profession-bar_title")
+
+    // Змінила @FindBy(className) на @FindBy(css) для більшої гнучкості
+    @FindBy(css = ".profession-bar_title")
     private WebElement title;
-    @FindBy(className = "profession-bar_subtitle profession-subtitle")
+
+    @FindBy(css = ".profession-bar_subtitle")
     private WebElement subtitle;
-    @FindBy(className = "profession-bar_descr")
+
+    @FindBy(css = ".profession-bar_descr")
     private WebElement description;
-    @FindBy(className = "block-profession_link profession-bar -offline")
+
+    @FindBy(css = ".block-profession_link")
     private WebElement link;
 
+    // Методи з перевіркою на наявність елементів (перед спробою отримати їх текст або атрибути), щоб не виникло помилки
     public String getCourseName() {
-        return title.getText();
+        return title.isDisplayed() ? title.getText() : "";
     }
+
     public String getCourseSubtitle() {
-        return subtitle.getText();
+        return subtitle.isDisplayed() ? subtitle.getText() : "";
     }
+
     public String getCourseDescription() {
-        return description.getText();
+        return description.isDisplayed() ? description.getText() : "";
     }
+
     public String getCourseLink() {
-        return link.getText();
+        return link.isDisplayed() ? link.getText() : "";
     }
 }
