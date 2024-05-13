@@ -1,5 +1,6 @@
 package org.example.HW12;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -17,6 +18,9 @@ public class TestingCoursesBlock {
 
     @FindBy(css = ".block-profession_link")
     private WebElement link;
+
+    public TestingCoursesBlock(WebElement courseElement) {
+    }
 
     // Методи з перевіркою на наявність елементів (перед спробою отримати їх текст або атрибути), щоб не виникло помилки
     public String getCourseName() {

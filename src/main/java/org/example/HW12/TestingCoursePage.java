@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class TestingCoursePage implements CoursesElements {
@@ -18,8 +19,22 @@ public class TestingCoursePage implements CoursesElements {
 
     @Override
     public List<TestingCoursesBlock> getCourses() {
-        return List.of();
+        // Отримання елементів, які представляють курси зі сторінки -
+        List<WebElement> courseElements = driver.findElements(By.className("p.profession-bar_title"));
+
+        // Створення списку для зберігання об'єктів TestingCoursesBlock
+        List<TestingCoursesBlock> courses = new ArrayList<>();
+
+        // Проходження по кожному елементу курсу і створення об'єкту TestingCoursesBlock
+        for (WebElement courseElement : courseElements) {
+            // Створення об'єкту TestingCoursesBlock з вже знайденими елементами та додавання його до списку
+            TestingCoursesBlock course = new TestingCoursesBlock(courseElement);
+            courses.add(course);
+        }
+        // Повернення списку курсів
+        return courses;
     }
+
     @Override
     public List<TestingCoursesBlock> getAdditionalCourses() {
         return List.of();
