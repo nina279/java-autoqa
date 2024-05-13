@@ -6,7 +6,6 @@ import org.openqa.selenium.support.FindBy;
 
 public class TestingCoursesBlock {
 
-    // Змінила @FindBy(className) на @FindBy(css) для більшої гнучкості
     @FindBy(css = ".profession-bar_title")
     private WebElement title;
 
@@ -20,9 +19,12 @@ public class TestingCoursesBlock {
     private WebElement link;
 
     public TestingCoursesBlock(WebElement courseElement) {
+        this.title = courseElement.findElement(By.cssSelector(".profession-bar_title"));
+        this.subtitle = courseElement.findElement(By.cssSelector(".profession-bar_subtitle"));
+        this.description = courseElement.findElement(By.cssSelector(".profession-bar_descr"));
+        this.link = courseElement.findElement(By.cssSelector(".block-profession_link"));
     }
 
-    // Методи з перевіркою на наявність елементів (перед спробою отримати їх текст або атрибути), щоб не виникло помилки
     public String getCourseName() {
         return title.isDisplayed() ? title.getText() : "";
     }

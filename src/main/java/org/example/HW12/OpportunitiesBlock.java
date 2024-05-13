@@ -4,8 +4,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class OpportunitiesBlock {
-
-    // Змінила @FindBy(className) на @FindBy(css) для більшої гнучкості
     @FindBy(css = ".opportunity-item_title")
     private WebElement title;
 

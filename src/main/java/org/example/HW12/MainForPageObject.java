@@ -17,6 +17,6 @@ public class MainForPageObject {
             System.out.println(course.getCourseName());
         }
 
-        driver.quit();
+        driver.quit(); //Не забувай!
     }
 }
