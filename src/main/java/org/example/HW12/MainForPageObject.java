@@ -11,11 +11,17 @@ public class MainForPageObject {
         driver.get("https://ithillel.ua/courses/testing");
 
         TestingCoursePage testingCoursePage = new TestingCoursePage(driver);
-        List<TestingCoursesBlock> courses = testingCoursePage.getCourses();
-        // виведення курсів
-        for (TestingCoursesBlock course : courses) {
-            System.out.println(course.getCourseName());
-        }
+        testingCoursePage.getCourses().stream()
+                .map(TestingCoursesBlock::getCourseName)
+                .forEach(System.out::println);
+
+//
+//        TestingCoursePage testingCoursePage = new TestingCoursePage(driver);
+//        List<TestingCoursesBlock> courses = testingCoursePage.getCourses();
+//        // виведення курсів
+//        for (TestingCoursesBlock course : courses) {
+//            System.out.println(course.getCourseName());
+//        }
 
         driver.quit(); //Не забувай!
     }

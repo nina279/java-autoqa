@@ -14,13 +14,14 @@ public class TestingCoursePage implements CoursesElements {
     //Конструктор - власне ініціалізаця елементів сторінки за допомогою Page Factory
     public TestingCoursePage(WebDriver driver) {
         this.driver = driver;
-        PageFactory.initElements(driver, this);
+//        PageFactory.initElements(driver, this); не реба це, я ж findElements використовую нижче
     }
+
 
     @Override
     public List<TestingCoursesBlock> getCourses() {
         // Отримання елементів, які представляють курси зі сторінки -
-        List<WebElement> courseElements = driver.findElements(By.className("p.profession-bar_title"));
+        List<WebElement> courseElements = driver.findElements(By.className("block-profession_item"));
 
         // Створення списку для зберігання об'єктів TestingCoursesBlock
         List<TestingCoursesBlock> courses = new ArrayList<>();

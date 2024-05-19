@@ -3,6 +3,7 @@ package org.example.HW12;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class TestingCoursesBlock {
 
@@ -19,14 +20,16 @@ public class TestingCoursesBlock {
     private WebElement link;
 
     public TestingCoursesBlock(WebElement courseElement) {
-        this.title = courseElement.findElement(By.cssSelector(".profession-bar_title"));
-        this.subtitle = courseElement.findElement(By.cssSelector(".profession-bar_subtitle"));
-        this.description = courseElement.findElement(By.cssSelector(".profession-bar_descr"));
-        this.link = courseElement.findElement(By.cssSelector(".block-profession_link"));
+        PageFactory.initElements(courseElement, this);
+        // оце все нижче не треба, бо я використовую PageFactory з @FindBy
+//        this.title = courseElement.findElement(By.cssSelector(".profession-bar_title"));
+//        this.subtitle = courseElement.findElement(By.cssSelector(".profession-bar_subtitle"));
+//        this.description = courseElement.findElement(By.cssSelector(".profession-bar_descr"));
+//        this.link = courseElement.findElement(By.cssSelector(".block-profession_link"));
     }
 
     public String getCourseName() {
-        return title.isDisplayed() ? title.getText() : "";
+        return title.getText();
     }
 
     public String getCourseSubtitle() {

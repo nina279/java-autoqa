@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="81a41552-ad33-40a5-9c4b-ef241bff1f1e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/HW12/MainForPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/HW12/MainForPageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/HW12/OpportunitiesBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/HW12/OpportunitiesBlock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/HW12/TestingCoursePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/HW12/TestingCoursePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/HW12/TestingCoursesBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/HW12/TestingCoursesBlock.java" afterDir="false" />
     </list>
@@ -44,6 +44,7 @@
   "keyToString": {
     "Application.HW11.executor": "Run",
     "Application.MainForPageObject.executor": "Run",
+    "Application.MainHW13.executor": "Run",
     "Maven.qa-auto-test [compile].executor": "Run",
     "Maven.qa-auto-test [deploy].executor": "Run",
     "Maven.qa-auto-test [test].executor": "Run",
@@ -65,7 +66,7 @@
       <recent name="org.example.HW12" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MainForPageObject">
+  <component name="RunManager" selected="Application.MainHW13">
     <configuration name="HW11" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HW11" />
       <module name="qa-auto-test" />
@@ -86,6 +87,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainHW13" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.HW13.MainHW13" />
+      <module name="qa-auto-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.HW13.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -99,6 +113,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainHW13" />
         <item itemvalue="Application.MainForPageObject" />
         <item itemvalue="Application.HW11" />
       </list>
