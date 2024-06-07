@@ -7,9 +7,7 @@
     <list default="true" id="81a41552-ad33-40a5-9c4b-ef241bff1f1e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/HW12/MainForPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/HW12/MainForPageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/HW12/TestingCoursePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/HW12/TestingCoursePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/HW12/TestingCoursesBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/HW12/TestingCoursesBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +43,10 @@
     "Application.HW11.executor": "Run",
     "Application.MainForPageObject.executor": "Run",
     "Application.MainHW13.executor": "Run",
+    "Maven.qa-auto-test [clean].executor": "Run",
     "Maven.qa-auto-test [compile].executor": "Run",
     "Maven.qa-auto-test [deploy].executor": "Run",
+    "Maven.qa-auto-test [install].executor": "Run",
     "Maven.qa-auto-test [test].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -55,7 +55,7 @@
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/ninatretiak/IdeaProjects/qa-auto-test",
     "onboarding.tips.debug.path": "/Users/ninatretiak/IdeaProjects/qa-auto-test/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settings.project.maven.importing"
@@ -178,16 +178,5 @@
     <MESSAGE value="HW12" />
     <MESSAGE value="getCourses method updates" />
     <option name="LAST_COMMIT_MESSAGE" value="getCourses method updates" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
